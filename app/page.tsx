@@ -1,67 +1,3 @@
-'use client';
-
-import { useEffect, useState } from 'react';
-
-const modules = [
-  ['Vendas & PDV','Pedidos, frente de caixa, comissões, metas, consignação e precificação em um fluxo conectado.'],
-  ['Financeiro','Contas a pagar e receber, bancos, caixa, cobrança e visão real do fluxo financeiro.'],
-  ['Estoque & Compras','Inventário, custos, depósitos, entradas por XML e compras do pedido ao recebimento.'],
-  ['Fiscal','Documentos fiscais, DF-e recebidos, operações, NCM e configurações integradas.'],
-  ['Gestão de Entregas','Cargas, motoristas, ocorrências, canhotos e comprovantes em uma única central.'],
-  ['Intelligence','Rentabilidade, metas, capital de giro e simulações para decisões mais seguras.']
-];
-
-const whatsapp = 'https://wa.me/5584994412689?text=Olá!%20Quero%20conhecer%20as%20soluções%20da%20Avantti.';
-
-export default function Home() {
-  const [open, setOpen] = useState(false);
-  const [theme, setTheme] = useState<'light'|'dark'>('dark');
-
-  useEffect(() => {
-    const saved = localStorage.getItem('avantti-theme') as 'light'|'dark'|null;
-    const initial = saved ?? 'dark';
-    setTheme(initial);
-    document.documentElement.dataset.theme = initial;
-  }, []);
-
-  const toggleTheme = () => {
-    const next = theme === 'light' ? 'dark' : 'light';
-    setTheme(next);
-    document.documentElement.dataset.theme = next;
-    localStorage.setItem('avantti-theme', next);
-  };
-
-  return (
-    <main>
-      <header>
-        <a className="brand" href="#inicio"><img src="/logo-avantti-sistemas.png" alt="Avantti Sistemas" /></a>
-        <button className="menu-toggle" aria-label="Abrir menu" onClick={() => setOpen(!open)}>☰</button>
-        <nav className={open ? 'open' : ''}>
-          <a href="#inicio">Visão geral</a>
-          <a href="#ecossistema">Ecossistema</a>
-          <a href="#solucoes">Soluções</a>
-          <a href="#publico">Para quem</a>
-          <a href="#sobre">Sobre</a>
-          <a href="#contato">Contato</a>
-        </nav>
-        <button className="theme-toggle" type="button" onClick={toggleTheme} aria-label={theme==='dark'?'Ativar modo claro':'Ativar modo escuro'}>{theme==='dark'?'☀':'☾'}</button>
-        <a className="btn top-cta" href="#contato">Solicitar demonstração ↗</a>
-      </header>
-
-      <section className="hero" id="inicio">
-        <div className="copy">
-          <div className="eyebrow">— ERP COMPLETO PARA EMPRESAS QUE QUEREM AVANÇAR</div>
-          <h1>Seu negócio<br/>em movimento.<br/><em>Sob controle.</em></h1>
-          <p>Gestão, operação e inteligência conectadas em uma plataforma 100% web, criada para transformar dados do dia a dia em decisões melhores.</p>
-          <div className="product-line"><span>ERP</span><i>•</i><span>COMPROVA</span><i>•</i><span>INTELLIGENCE</span></div>
-          <div className="actions">
-            <a className="btn" href="#ecossistema">Conheça o ecossistema →</a>
-            <a href="#solucoes"><b>Explorar soluções ↓</b></a>
-          </div>
-          <div className="numbers">
-            <span><b>360°</b><small>visão da operação</small></span>
-            <span><b>1 só</b><small>ecossistema de gestão</small></span>
-            <span><b>100%</b><small>web e multiempresa</small></span>
           </div>
         </div>
         <div className="visual">
@@ -183,7 +119,7 @@ export default function Home() {
 
       <section className="cta" id="contato">
         <div><small>O PRÓXIMO PASSO</small><h2>Pronto para colocar<br/>sua gestão em movimento?</h2></div>
-        <div><p>Veja o Avantti funcionando na prática e descubra como conectar toda a sua operação.</p><div className="cta-buttons"><a className="btn" href={whatsapp} target="_blank" rel="noreferrer">Falar no WhatsApp ↗</a><a className="btn outline" href="mailto:contato@avanttisistemas.com.br?subject=Quero conhecer o Avantti ERP">Solicitar demonstração</a></div></div>
+        <div><p>Veja o Avantti funcionando na prática e descubra como conectar toda a sua operação.</p><div className="cta-buttons"><a className="btn" href={whatsapp} target="_blank" rel="noreferrer">Falar no WhatsApp ↗</a><a className="btn outline" href="https://www.avanttisistemas.com.br/#/demonstracao" target="_blank" rel="noreferrer">Solicitar demonstração</a></div></div>
       </section>
 
       <footer>
