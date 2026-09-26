@@ -11,7 +11,7 @@ const modules = [
   ['Intelligence','Rentabilidade, metas, capital de giro e simulações para decisões mais seguras.']
 ];
 
-const whatsapp = 'https://wa.me/5584991754082?text=Olá!%20Quero%20conhecer%20as%20soluções%20da%20Avantti.';
+const whatsapp = 'https://wa.me/5584994412689?text=Olá!%20Quero%20conhecer%20as%20soluções%20da%20Avantti.';
 
 export default function Home() {
   const [open, setOpen] = useState(false);
@@ -189,7 +189,7 @@ export default function Home() {
       <footer>
         <div className="footer-main"><a className="brand footer-brand" href="#inicio"><img src="/logo-avantti-sistemas-slogan.png" alt="Avantti Sistemas" /></a><p>Gestão inteligente para empresas em movimento.</p></div>
         <div className="footer-links"><b>Soluções</b><a href="#solucoes">Avantti ERP</a><a href="https://comprova.avanttisistemas.com.br" target="_blank" rel="noreferrer">Avantti Comprova</a><a href="#intelligence">Avantti Intelligence</a></div>
-        <div className="footer-links"><b>Contato</b><a href="mailto:contato@avanttisistemas.com.br">contato@avanttisistemas.com.br</a><a href={whatsapp} target="_blank" rel="noreferrer">WhatsApp</a><a href="#sobre">Sobre a Avantti</a></div>
+        <div className="footer-links"><b>Contato</b><a href="mailto:avanttisistemas@gmail.com">avanttisistemas@gmail.com</a><a href={whatsapp} target="_blank" rel="noreferrer">WhatsApp</a><a href="#sobre">Sobre a Avantti</a></div>
         <span className="copyright">© 2026 Avantti Sistemas</span>
       </footer>
 
