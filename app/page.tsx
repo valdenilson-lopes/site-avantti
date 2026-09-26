@@ -125,3 +125,75 @@ export default function Home() {
         <div className="intel-art"><div className="core"><small>AVANTTI</small><b>INTELLIGENCE</b><i>●</i></div></div>
         <div className="intel-copy"><small>DECISÃO BASEADA EM DADOS</small><h2>Seu ERP também<br/>pode pensar à frente.</h2><p>Indicadores financeiros, comerciais, compras e estoque conectados para revelar o que merece sua atenção — antes que vire um problema.</p><ul><li><i>01</i> Cockpit financeiro e gerencial</li><li><i>02</i> Rentabilidade por produto e cliente</li><li><i>03</i> Metas, comparativos e simuladores</li><li><i>04</i> Capital de giro e visão de tendências</li></ul><a className="btn light" href="#contato">Quero conhecer →</a></div>
       </section>
+
+      <section className="segments" id="publico">
+        <div className="audience-intro">
+          <div className="section-head"><small>PÚBLICO-ALVO</small><h2>Gestão para quem vende,<br/>distribui e cresce.</h2></div>
+          <p>O Avantti foi pensado para empresas que precisam integrar vendas, estoque, compras, financeiro, fiscal e gestão em uma única plataforma. Atendemos operações de diferentes portes, com foco especial no varejo, distribuição e farmácias.</p>
+        </div>
+
+        <div className="audience-main">
+          <article className="audience-card audience-retail">
+            <span className="audience-number">01</span>
+            <div className="audience-icon">V</div>
+            <small>VAREJO EM GERAL</small>
+            <h3>Mais agilidade no balcão.<br/>Mais controle na gestão.</h3>
+            <p>Para lojas e redes que precisam acompanhar vendas, caixa, estoque, clientes, preços, metas e resultado financeiro sem depender de sistemas desconectados.</p>
+            <ul><li>PDV e vendas integrados</li><li>Estoque e movimentações</li><li>Financeiro e fiscal</li><li>Multiempresa e multiloja</li></ul>
+          </article>
+
+          <article className="audience-card audience-distribution">
+            <span className="audience-number">02</span>
+            <div className="audience-icon">D</div>
+            <small>DISTRIBUIDORES</small>
+            <h3>Volume operacional<br/>com visão de margem.</h3>
+            <p>Para distribuidores que lidam com alto volume de pedidos, compras, estoque e entregas e precisam enxergar rentabilidade, giro e desempenho comercial com clareza.</p>
+            <ul><li>Pedidos e força comercial</li><li>Compras e abastecimento</li><li>Estoque e logística</li><li>Rentabilidade e indicadores</li></ul>
+          </article>
+
+          <article className="audience-card audience-pharma">
+            <span className="audience-number">03</span>
+            <div className="audience-icon">F</div>
+            <small>FARMÁCIAS E DROGARIAS</small>
+            <h3>Rapidez no atendimento.<br/>Controle em cada operação.</h3>
+            <p>Para farmácias e drogarias que precisam de velocidade no atendimento e acompanhamento próximo de estoque, compras, preços, financeiro e movimentação fiscal.</p>
+            <ul><li>Atendimento e vendas</li><li>Controle de estoque</li><li>Compras e precificação</li><li>Gestão financeira e fiscal</li></ul>
+          </article>
+        </div>
+
+        <div className="audience-more">
+          <div><small>TAMBÉM PREPARADO PARA</small><h3>Outros segmentos do comércio e distribuição</h3></div>
+          <div className="segment-tags">
+            <span>Supermercados e atacarejos</span>
+            <span>Materiais de construção</span>
+            <span>Autopeças</span>
+            <span>Lojas de variedades</span>
+            <span>Alimentos e bebidas</span>
+            <span>Redes de lojas</span>
+            <span>Indústrias com distribuição</span>
+            <span>Transportadoras</span>
+          </div>
+        </div>
+      </section>
+
+      <section className="about" id="sobre">
+        <div className="about-badge">2024</div>
+        <div><small>SOBRE A AVANTTI</small><h2>Tecnologia para simplificar<br/>a gestão e acelerar decisões.</h2><p>A Avantti nasceu em 2024 com o propósito de desenvolver soluções de software que aproximem operação, gestão e inteligência. Criamos produtos com foco em integração, praticidade e informação útil para empresas que buscam crescer com mais controle.</p><div className="about-values"><span><b>Integração</b>menos retrabalho entre áreas</span><span><b>Clareza</b>informação pronta para decidir</span><span><b>Evolução</b>tecnologia que acompanha o negócio</span></div></div>
+      </section>
+
+      <section className="cta" id="contato">
+        <div><small>O PRÓXIMO PASSO</small><h2>Pronto para colocar<br/>sua gestão em movimento?</h2></div>
+        <div><p>Veja o Avantti funcionando na prática e descubra como conectar toda a sua operação.</p><div className="cta-buttons"><a className="btn" href={whatsapp} target="_blank" rel="noreferrer">Falar no WhatsApp ↗</a><a className="btn outline" href="https://www.avanttisistemas.com.br/#/demonstracao" target="_blank" rel="noreferrer">Solicitar demonstração</a></div></div>
+      </section>
+
+      <footer>
+        <div className="footer-main"><a className="brand footer-brand" href="#inicio"><img src="/logo-avantti-sistemas-slogan.png" alt="Avantti Sistemas" /></a><p>Gestão inteligente para empresas em movimento.</p></div>
+        <div className="footer-links"><b>Soluções</b><a href="#solucoes">Avantti ERP</a><a href="https://comprova.avanttisistemas.com.br" target="_blank" rel="noreferrer">Avantti Comprova</a><a href="#intelligence">Avantti Intelligence</a></div>
+        <div className="footer-links"><b>Contato</b><a href="mailto:avanttisistemas@gmail.com">avanttisistemas@gmail.com</a><a href={whatsapp} target="_blank" rel="noreferrer">WhatsApp</a><a href="#sobre">Sobre a Avantti</a></div>
+        <span className="copyright">© 2026 Avantti Sistemas</span>
+      </footer>
+
+      <a className="whatsapp-float" href={whatsapp} target="_blank" rel="noreferrer" aria-label="Falar com a Avantti no WhatsApp"><b>✆</b><span>WhatsApp</span></a>
+    </main>
+  );
+}
